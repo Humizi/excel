@@ -1,2 +1,74 @@
 @import "variables";
 @import "mixins";
+
+.table {
+  position: absolute;
+  top: $header-height + $toolbar-height + $formula-height;
+  right: 0;
+  left: 0;
+
+  padding-bottom: 2px;
+
+  overflow-x: auto;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    min-height: 20px;
+    height: $row-height;
+
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      min-width: $info-cell-width;
+
+      background-color: #f8f9fa;
+      border: 1px solid $border-color;
+      border-top: none;
+    }
+
+    &__data {
+      display: flex;
+    }
+  }
+
+  .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    width: $cell-width;
+    height: 100%;
+
+    background-color: #f8f9fa;
+    border: 1px solid $border-color;
+    border-top: none;
+    border-left: none;
+  }
+
+  .cell {
+    width: $cell-width;
+    min-width: 40px;
+    height: 100%;
+    padding: 5px;
+
+    color: #111111;
+    white-space: nowrap;
+
+    border: 1px solid #e2e3e3;
+    border-top: none;
+    border-left: none;
+
+    outline: none;
+
+    &.selected {
+      z-index: 2;
+
+      border: none;
+
+      outline: 2px solid #3c74ff;
+    }
+  }
+}
