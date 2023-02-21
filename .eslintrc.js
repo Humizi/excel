@@ -20,5 +20,8 @@ module.exports = {
     "quote-props": ["error", "as-needed"],
     quotes: 0,
     "require-jsdoc": 0,
+    "operator-linebreak": 0,
+    "no-debugger": 0,
+    indent: 0,
   },
 };
