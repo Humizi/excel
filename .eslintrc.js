@@ -23,5 +23,9 @@ module.exports = {
     "operator-linebreak": 0,
     "no-debugger": 0,
     indent: 0,
+    "no-tabs": 0,
+    "no-unused-vars": 0,
+    "no-undef": 0,
+    "spaced-comment": 0
   },
 };
