@@ -18,6 +18,14 @@ module.exports = {
     "comma-dangle": "off",
     "object-curly-spacing": ["error", "always", { arraysInObjects: true }],
     "quote-props": ["error", "as-needed"],
-    quotes: [2, "double", { avoidEscape: true, allowTemplateLiterals: true }],
+    quotes: 0,
+    "require-jsdoc": 0,
+    "operator-linebreak": 0,
+    "no-debugger": 0,
+    indent: 0,
+    "no-tabs": 0,
+    "no-unused-vars": 0,
+    "no-undef": 0,
+    "spaced-comment": 0
   },
 };
